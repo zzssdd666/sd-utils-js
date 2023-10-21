@@ -1,0 +1,27 @@
+{
+  "name": "sd-utils-js",
+  "version": "0.1.1",
+  "description": "js utility functions",
+  "keywords": [
+    "utils",
+    "js-utils"
+  ],
+  "main": "index.js",
+  "files": [
+    "*.js",
+    "/utils/*.js"
+  ],
+  "author": "zsd",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "homepage": "",
+  "publicConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "copy-to": "^2.0.1"
+  }
+}
