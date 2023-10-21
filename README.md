@@ -32,3 +32,7 @@ const person = {
 }
 utils.has(person, 'name'); //true
 ```
+
+## git
+
+gitee: https://gitee.com/zzzsssddd/sd-utils-js
