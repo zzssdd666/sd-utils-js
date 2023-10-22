@@ -7,7 +7,7 @@ var _ = require("lodash")
  * @param {Number} decimalNum 小数点后几位
  * @returns 结果
  */
-exports.randomNum = function (minNum, maxNum, decimalNum) {
+export const randomNum = (minNum, maxNum, decimalNum) => {
 	// 获取指定范围内的随机数, decimalNum指小数保留多少位
 	var max = 0,
 		min = 0
