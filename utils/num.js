@@ -1,3 +1,5 @@
+var _ = require("lodash")
+
 /**
  * 生成指定范围、指定小数位数的随机数
  * @param {Number} minNum 最小值
@@ -20,4 +22,32 @@ exports.randomNum = function (minNum, maxNum, decimalNum) {
 		default:
 			return Math.random()
 	}
+}
+
+/**
+ * 转换 value 为一个数字
+ * @param {*} value 要处理的值
+ * @returns 返回数字
+ */
+export const toNumber = value => {
+	return _.toNumber(value)
+}
+
+/**
+ * 转换 value 为一个整数
+ * @param {*} value 要处理的值
+ * @returns 返回整数
+ */
+export const toInteger = value => {
+	return _.toInteger(value)
+}
+
+/**
+ * 根据指定精度 四舍五入
+ * @param {*} value 要四舍五入的数字
+ * @param {*} precision 四舍五入的精度
+ * @returns 返回四舍五入的数字
+ */
+export const round = (value, precision = 0) => {
+	return _.round(value, precision)
 }

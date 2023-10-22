@@ -1,3 +1,5 @@
+var _ = require("lodash")
+
 /**
  * 是否为空
  * @param {String} str
@@ -76,4 +78,13 @@ export const randomString = function (length = 16, charSet = null) {
 		result.push(charSet[Math.floor(Math.random() * charSet.length)])
 	}
 	return result.join("")
+}
+
+/**
+ * 转换任务内容为字符串
+ * @param {*} data 要转换的内容
+ * @returns 字符串
+ */
+export const toString = function (data) {
+	return _.toString(data)
 }
