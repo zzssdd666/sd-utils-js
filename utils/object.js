@@ -6,7 +6,7 @@ var _ = require("lodash")
  * @param {*} prop
  * @returns
  */
-exports.has = function (obj, prop) {
+export const has = function (obj, prop) {
 	return Object.prototype.hasOwnProperty.call(obj, prop)
 }
 
